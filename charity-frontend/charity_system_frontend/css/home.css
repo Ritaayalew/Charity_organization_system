@@ -1,0 +1,216 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-link {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+    
+
+}
+
+.header {
+    background-image: url('./../photos/image-banner.jpg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    height: 90vh;
+    position: relative; 
+    margin-top: 0px;
+    color: white; 
+    z-index: 2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+.logo {
+    border-radius: 50%;
+    height: 50px;
+}
+.header {
+    background-image: url('./../photos/image-banner.jpg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    height: 90vh;
+    position: relative; 
+    margin-top: 0px;
+    color: white; 
+    z-index: 2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.content-box{ 
+    display: flex;
+    justify-content: space-between;
+   
+}
+.content-box p {
+    
+    border-radius: 10px;
+    font-family:fantasy; color:rgb(5, 75, 5); padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1),
+    0 4px 20px rgba(55, 109, 76, 0.1); 
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+    0px 0px 15px rgba(17, 99, 52, 0.5),
+    0px 0px 25px rgba(141, 198, 166, 0.5);
+}
+
+.container h3{
+    font-family:fantasy; font-weight: 700;  
+    font-size: 20px; color:rgb(9, 159, 9); 
+    padding: 10px;
+}
+.container h5{
+    color: green;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.icons {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+   
+    border-radius: 10px; 
+    padding: 10px;        
+    background-color: #d1d2d4; 
+    margin-left: 130px;
+}
+.icons img{
+    width: 30px;
+    border-radius: 50%;
+}
+.p2{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+    0px 0px 15px rgba(17, 99, 52, 0.5),
+    0px 0px 25px rgba(141, 198, 166, 0.5);
+}
+.navv{
+    display: none;
+}
+.images img {
+width: 200px;
+
+margin: 10px; 
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+0px 0px 15px rgba(17, 99, 52, 0.5),
+0px 0px 25px rgba(141, 198, 166, 0.5);
+}
+
+@media (max-width: 480px) {
+    .content-box {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    .content-box p{
+        width: 100%;
+    }
+    .images{
+        flex-direction: column;
+        
+    }
+    .images img{
+        width: 70%;
+        margin-left: 50px;
+    }
+    
+    .modal-form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        z-index: 1050; 
+        display: none; 
+    }
+    .modal-loginform{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        z-index: 1050; 
+        display: none;
+    }
+    .navv img{
+        width: 30px;
+        position: fixed;
+        margin-left: 10px;
+    }
+    .container h3{
+        font-family:fantasy; font-weight: 700;  
+        font-size: 17px; color:rgb(9, 159, 9); 
+
+    }
+    .container h5{
+        font-size: 15px;
+    }
+    .header {
+        height: 70vh; 
+    }
+    
+    .header button {
+        width: 40%; 
+        margin-top: 70px;
+    }
+    .navbar-link {
+        display: none; 
+        position: fixed; 
+        top: 50px;
+        left: 0;
+        width: 260px;
+        height: auto; /* Changed to auto for better flexibility */
+        background-color: #343435;  
+        z-index: 1000;
+        border-radius: 10%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        padding: 10px; /* Add padding for better spacing */
+        transition: background-color 0.3s ease; /* Smooth background transition */
+    }
+    
+    /* Add hover effect */
+    .navbar-link a {
+        color: white; /* Ensure text is visible */
+        text-decoration: none; /* Remove underline */
+        padding: 10px; /* Add padding to links */
+        display: block; /* Make links block-level for easier clicking */
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+    
+    .navbar-link a:hover {
+        background-color: #575859; /* Change background color on hover */
+        border-radius: 5px; /* Subtle rounding on hover */
+    }
+    
+ .navbar-link.active {
+        display: flex;
+
+    }
+    
+    .navv {
+        display: block; 
+        width: 20px;
+    
+    }
+
+ 
+
+.navbar-link {
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.navbar-link a{
+   font-weight: 800;
+   font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+}}
