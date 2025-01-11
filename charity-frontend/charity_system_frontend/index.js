@@ -130,7 +130,7 @@ function validateAdmin() {
     }
     if (adminPassword == secretKey){
         console.log("Redirecting to admin dashboard");
-        window.location.assign('./Admin.html');
+        window.location.pathname='/admin-dashboard';
     }
 
     

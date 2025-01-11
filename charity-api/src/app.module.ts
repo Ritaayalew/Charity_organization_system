@@ -8,18 +8,30 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 
 
-const ormOptions: TypeOrmModuleOptions={
-  type: "mysql",
-  host: process.env.DB_HOST, 
-  port: parseInt(process.env.DB_PORT, 10), 
-  username: process.env.DB_USERNAME, 
-  password: process.env.DB_PASSWORD, 
-  database: process.env.DB_DATABASE, 
+
+// const ormOptions: TypeOrmModuleOptions={
+//   type: "mysql",
+//   host: process.env.DB_HOST, 
+//   port: parseInt(process.env.DB_PORT, 10), 
+//   username: process.env.DB_USERNAME, 
+//   password: process.env.DB_PASSWORD, 
+//   database: process.env.DB_DATABASE, 
+//   autoLoadEntities: true,
+//   synchronize: true
+// };
+
+const ormOptions: TypeOrmModuleOptions = {
+  type: 'mysql',
+  host: 'localhost',
+  port: 3306,
+  username: 'root',
+  password: 'Hr123',
+  database: 'charity_database',
   autoLoadEntities: true,
   synchronize: true
 };
 
- 
+
 
 @Module({
   imports: [
